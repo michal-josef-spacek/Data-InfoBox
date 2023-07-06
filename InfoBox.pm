@@ -3,7 +3,7 @@ package Data::InfoBox;
 use strict;
 use warnings;
 
-use Mo qw(build default is);
+use Mo qw(build is);
 use Mo::utils qw(check_array_object check_required);
 
 our $VERSION = 0.01;
