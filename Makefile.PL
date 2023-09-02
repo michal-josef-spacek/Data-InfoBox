@@ -18,6 +18,7 @@ name 'Data-InfoBox';
 perl_version 5.008;
 readme_from 'lib/Data/InfoBox.pm';
 recursive_author_tests('xt');
+requires 'Data::Text::Simple' => 0;
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.19;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-InfoBox/issues';

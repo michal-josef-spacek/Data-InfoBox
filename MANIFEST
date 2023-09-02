@@ -13,6 +13,7 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Data/InfoBox.pm
 lib/Data/InfoBox/Item.pm
+lib/Test/Shared/Fixture/Data/InfoBox/Street.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
@@ -23,7 +24,11 @@ t/Data-InfoBox-Item/02-version.t
 t/Data-InfoBox/01-use.t
 t/Data-InfoBox/02-version.t
 t/Data-InfoBox/03-new.t
+t/Test-Shared-Fixture-Data-InfoBox-Street/01-use.t
+t/Test-Shared-Fixture-Data-InfoBox-Street/02-version.t
 xt/Data-InfoBox-Item/01-pod_coverage.t
 xt/Data-InfoBox-Item/02-pod.t
 xt/Data-InfoBox/01-pod_coverage.t
 xt/Data-InfoBox/02-pod.t
+xt/Test-Shared-Fixture-Data-InfoBox-Street/01-pod_coverage.t
+xt/Test-Shared-Fixture-Data-InfoBox-Street/02-pod.t
