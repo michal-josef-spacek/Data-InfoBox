@@ -22,6 +22,7 @@ t/Data-InfoBox-Item/01-use.t
 t/Data-InfoBox-Item/02-version.t
 t/Data-InfoBox/01-use.t
 t/Data-InfoBox/02-version.t
+t/Data-InfoBox/03-new.t
 xt/Data-InfoBox-Item/01-pod_coverage.t
 xt/Data-InfoBox-Item/02-pod.t
 xt/Data-InfoBox/01-pod_coverage.t
