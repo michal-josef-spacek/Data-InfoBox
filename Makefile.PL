@@ -20,7 +20,7 @@ readme_from 'lib/Data/InfoBox.pm';
 recursive_author_tests('xt');
 requires 'Data::Text::Simple' => 0;
 requires 'Mo' => 0;
-requires 'Mo::utils' => 0.19;
+requires 'Mo::utils' => 0.21;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-InfoBox/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-InfoBox';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-InfoBox';
