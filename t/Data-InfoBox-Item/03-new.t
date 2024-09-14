@@ -29,7 +29,7 @@ isa_ok($obj, 'Data::InfoBox::Item');
 
 # Test.
 $obj = Data::InfoBox::Item->new(
-	'icon_utf8' => decode_utf8('⌂'),
+	'icon_char' => decode_utf8('⌂'),
 	'text' => Data::Text::Simple->new(
 		'text' => 'Text',
 	),
@@ -40,14 +40,14 @@ isa_ok($obj, 'Data::InfoBox::Item');
 # Test.
 eval {
 	Data::InfoBox::Item->new(
-		'icon_utf8' => 'bad',
+		'icon_char' => 'bad',
 		'text' => Data::Text::Simple->new(
 			'text' => 'Text',
 		),
 	);
 };
-is($EVAL_ERROR, "Parameter 'icon_utf8' has length greater than '1'.\n",
-	"Parameter 'icon_utf8' has length greater than '1' (bad).");
+is($EVAL_ERROR, "Parameter 'icon_char' has length greater than '1'.\n",
+	"Parameter 'icon_char' has length greater than '1' (bad).");
 clean();
 
 # Test.

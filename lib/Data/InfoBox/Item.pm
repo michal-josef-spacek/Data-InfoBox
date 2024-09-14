@@ -12,7 +12,7 @@ has icon_url => (
 	is => 'ro',
 );
 
-has icon_utf8 => (
+has icon_char => (
 	is => 'ro',
 );
 
@@ -30,8 +30,8 @@ sub BUILD {
 	# Check icon_url.
 	# TODO
 
-	# Check icon_utf8.
-	check_length($self, 'icon_utf8', 1);
+	# Check icon_char.
+	check_length($self, 'icon_char', 1);
 
 	# Check text.
 	check_required($self, 'text');
