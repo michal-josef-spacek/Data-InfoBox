@@ -25,3 +25,110 @@ sub BUILD {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Data::InfoBox - Data object for info box.
+
+=head1 SYNOPSIS
+
+ use Data::InfoBox;
+
+ my $obj = Data::InfoBox->new(%params);
+ my $items_ar = $obj->items;
+
+=head1 METHODS
+
+=head2 C<new>
+
+ my $obj = Data::InfoBox->new(%params);
+
+Constructor.
+
+Returns instance of object.
+
+=over 8
+
+=item * C<items>
+
+List of L<Data::InfoBox::Item> items. Must be as reference to array.
+
+It's required.
+
+=back
+
+=head2 C<items>
+
+ my $items_ar = $obj->items;
+
+Get list of items in info box.
+
+Returns reference to array with L<Data::InfoBox::Item> objects.
+
+=head1 EXAMPLE
+
+=for comment filename=create_infobox_object_and_print.pl
+
+ use strict;
+ use warnings;
+
+ use Data::InfoBox;
+ use Data::InfoBox::Item;
+ use Data::Text::Simple;
+
+ my $obj = Data::InfoBox->new(
+         'items' => [
+                Data::InfoBox::Item->new(
+                        'text' => Data::Text::Simple->new(
+                                'text' => 'First item',
+                        ),
+                ),
+                Data::InfoBox::Item->new(
+                        'text' => Data::Text::Simple->new(
+                                'text' => 'Second item',
+                        ),
+                ),
+         ],
+ );
+
+ # Print out.
+ my $num = 0;
+ foreach my $item (@{$obj->items}) {
+         $num++;
+         print "Item $num: ".$item->text->text."\n";
+ }
+
+ # Output:
+ # Item 1: First item
+ # Item 2: Second item
+
+=head1 DEPENDENCIES
+
+L<Mo>,
+L<Mo::utils>.
+
+=head1 REPOSITORY
+
+L<https://github.com/michal-josef-spacek/Data-InfoBox>
+
+=head1 AUTHOR
+
+Michal Josef Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+© 2024 Michal Josef Špaček
+
+BSD 2-Clause License
+
+=head1 VERSION
+
+0.01
+
+=cut

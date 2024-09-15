@@ -1,6 +1,5 @@
 TODO
 ====
-1. Add documentation.
 2. Add tests.
 4. Item checks. Image.
 6. Add SEE ALSO sections.
@@ -13,3 +12,6 @@ OK [20230902] skim
 
 5. Rename icon_utf8 to icon_char or icon_text?
 OK [20240914] skim
+
+1. Add documentation.
+OK [20240915] skim
