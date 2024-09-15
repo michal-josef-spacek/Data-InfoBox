@@ -34,6 +34,7 @@ t/Data-InfoBox/04-items.t
 t/Test-Shared-Fixture-Data-InfoBox-Street/01-use.t
 t/Test-Shared-Fixture-Data-InfoBox-Street/02-version.t
 t/Test-Shared-Fixture-Data-InfoBox-Street/03-new.t
+t/Test-Shared-Fixture-Data-InfoBox-Street/04-items.t
 xt/Data-InfoBox-Item/01-pod_coverage.t
 xt/Data-InfoBox-Item/02-pod.t
 xt/Data-InfoBox/01-pod_coverage.t
