@@ -75,8 +75,6 @@ Data::InfoBox::Item - Data object for info box item.
 
 Constructor.
 
-Returns instance of object.
-
 =over 8
 
 =item * C<icon_url>
@@ -104,6 +102,8 @@ URL of item.
 It's optional.
 
 =back
+
+Returns instance of object.
 
 =head2 C<icon_url>
 

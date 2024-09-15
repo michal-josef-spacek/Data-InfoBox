@@ -49,8 +49,6 @@ Data::InfoBox - Data object for info box.
 
 Constructor.
 
-Returns instance of object.
-
 =over 8
 
 =item * C<items>
@@ -60,6 +58,8 @@ List of L<Data::InfoBox::Item> items. Must be as reference to array.
 It's required.
 
 =back
+
+Returns instance of object.
 
 =head2 C<items>
 
