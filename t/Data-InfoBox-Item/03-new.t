@@ -5,7 +5,7 @@ use Data::InfoBox::Item;
 use Data::Text::Simple;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 9;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 use Unicode::UTF8 qw(decode_utf8);
 
@@ -89,4 +89,17 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'text' must be a 'Data::Text::Simple' object.\n",
 	"Parameter 'text' must be a 'Data::Text::Simple' object (bad).");
+clean();
+
+# Test.
+eval {
+	Data::InfoBox::Item->new(
+		'text' => Data::Text::Simple->new(
+			'text' => 'Text',
+		),
+		'url' => 'urn:isbn:0451450523',
+	);
+};
+is($EVAL_ERROR, "Parameter 'url' doesn't contain valid location.\n",
+	"Parameter 'url' doesn't contain valid location (urn:isbn:0451450523).");
 clean();

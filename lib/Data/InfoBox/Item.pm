@@ -39,6 +39,9 @@ sub BUILD {
 	check_required($self, 'text');
 	check_isa($self, 'text', 'Data::Text::Simple');
 
+	# Check url.
+	check_location($self, 'url');
+
 	return;
 }
 
