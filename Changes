@@ -1,4 +1,5 @@
 0.02
+ - API Change: Rename 'url' parameter to 'uri' and fix validity.
  - Add SEE ALSO sections to doc.
 
 0.01 2024-09-15T13:35:56+02:00
