@@ -6,7 +6,7 @@ use warnings;
 use Mo qw(build is);
 use Mo::utils 0.21 qw(check_array_object check_array_required);
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 has items => (
 	is => 'ro',
@@ -143,6 +143,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
