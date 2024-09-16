@@ -66,6 +66,13 @@ EXAMPLE
 DEPENDENCIES
     Mo, Mo::utils.
 
+SEE ALSO
+    Data::InfoBox::Item
+        Data object for info box item.
+
+    Test::Shared::Fixture::Data::InfoBox::Street
+        Street info box fixture.
+
 REPOSITORY
     <https://github.com/michal-josef-spacek/Data-InfoBox>
 

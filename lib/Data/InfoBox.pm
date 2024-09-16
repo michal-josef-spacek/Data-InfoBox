@@ -111,6 +111,20 @@ Returns reference to array with L<Data::InfoBox::Item> objects.
 L<Mo>,
 L<Mo::utils>.
 
+=head1 SEE ALSO
+
+=over
+
+=item L<Data::InfoBox::Item>
+
+Data object for info box item.
+
+=item L<Test::Shared::Fixture::Data::InfoBox::Street>
+
+Street info box fixture.
+
+=back
+
 =head1 REPOSITORY
 
 L<https://github.com/michal-josef-spacek/Data-InfoBox>

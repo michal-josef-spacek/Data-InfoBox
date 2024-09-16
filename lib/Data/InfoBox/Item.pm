@@ -188,6 +188,20 @@ L<Mo>,
 L<Mo::utils>,
 L<Mo::utils::URI>.
 
+=head1 SEE ALSO
+
+=over
+
+=item L<Data::InfoBox>
+
+Data object for info box.
+
+=item L<Test::Shared::Fixture::Data::InfoBox::Street>
+
+Street info box fixture.
+
+=back
+
 =head1 REPOSITORY
 
 L<https://github.com/michal-josef-spacek/Data-InfoBox>
