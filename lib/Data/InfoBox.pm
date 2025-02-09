@@ -36,9 +36,8 @@ Data::InfoBox - Data object for info box.
 
 =head1 DESCRIPTION
 
-Data objects for definition of common infobox which contains structured
-informations. The informations are in form of text description (optionaly with icon)
-and some value. It's used on e.g. Wikipedia article as table on top of the page.
+Data object for definition of common infobox which contains lines with
+informations. The informations are in form of text description (optionaly with icon and link).
 
 =head1 SYNOPSIS
 

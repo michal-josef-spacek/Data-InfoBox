@@ -64,6 +64,11 @@ __END__
 
 Data::InfoBox::Item - Data object for info box item.
 
+=head1 DESCRIPTION
+
+Data object for one common item in info box. Item could contains icon, text and
+URL.
+
 =head1 SYNOPSIS
 
  use Data::InfoBox::Item;
