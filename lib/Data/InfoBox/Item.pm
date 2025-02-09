@@ -59,7 +59,7 @@ Data::InfoBox::Item - Data object for info box item.
 
 =head1 SYNOPSIS
 
- use Data::InfoBox;
+ use Data::InfoBox::Item;
 
  my $obj = Data::InfoBox::Item->new(%params);
  my $icon_url = $obj->icon_url;
