@@ -1,4 +1,5 @@
 0.03
+ - Change API: Add 'icon' parameter with Data::Icon object.
  - Fix doc.
  - Update copyright years.
 

@@ -9,6 +9,10 @@ use Mo::utils::URI 0.02 qw(check_location check_uri);
 
 our $VERSION = 0.03;
 
+has icon => (
+	is => 'ro',
+);
+
 has icon_url => (
 	is => 'ro',
 );
@@ -27,6 +31,9 @@ has uri => (
 
 sub BUILD {
 	my $self = shift;
+
+	# Check icon.
+	check_isa($self, 'icon', 'Data::Icon');
 
 	# Check icon_url.
 	check_location($self, 'icon_url');
@@ -62,6 +69,7 @@ Data::InfoBox::Item - Data object for info box item.
  use Data::InfoBox::Item;
 
  my $obj = Data::InfoBox::Item->new(%params);
+ my $icon = $obj->icon;
  my $icon_url = $obj->icon_url;
  my $icon_char = $obj->icon_char;
  my $text = $obj->text;
@@ -76,6 +84,14 @@ Data::InfoBox::Item - Data object for info box item.
 Constructor.
 
 =over 8
+
+=item * C<icon>
+
+Icon for item.
+
+It's L<Data::Icon> object.
+
+It's optional.
 
 =item * C<icon_url>
 
@@ -104,6 +120,14 @@ It's optional.
 =back
 
 Returns instance of object.
+
+=head2 C<icon>
+
+ my $icon = $obj->icon;
+
+Get icon.
+
+Returns L<Data::Icon> instance.
 
 =head2 C<icon_url>
 
@@ -141,6 +165,9 @@ Returns string.
 
  new():
          From Mo::utils:
+                 Parameter 'icon' must be a 'Data::Icon' object.
+                         Value: %s
+                         Reference: %s
                  Parameter 'icon_char' has length greater than '1'.
                          Value: %s
                  Parameter 'text' is required.
@@ -161,11 +188,14 @@ Returns string.
  use strict;
  use warnings;
 
+ use Data::Icon;
  use Data::InfoBox::Item;
  use Data::Text::Simple;
 
  my $obj = Data::InfoBox::Item->new(
-         'icon_url' => 'https://example.com/foo.png',
+         'icon' => Data::Icon->new(
+                 'url' => 'https://example.com/foo.png',
+         ),
          'text' => Data::Text::Simple->new(
                  'text' => 'Funny item'
          ),
@@ -173,7 +203,7 @@ Returns string.
  );
 
  # Print out.
- print "Icon URL: ".$obj->icon_url."\n";
+ print "Icon URL: ".$obj->icon->url."\n";
  print "Text: ".$obj->text->text."\n";
  print "URI: ".$obj->uri."\n";
 

@@ -2,7 +2,6 @@ TODO
 ====
 4. Item checks. Image.
 6. Add SEE ALSO sections.
-7. Rewrite icon to Data::Icon object.
 8.
 
 Applied
@@ -18,3 +17,6 @@ OK [20240915] skim
 
 2. Add tests.
 OK [20240915] skim
+
+7. Rewrite icon to Data::Icon object.
+OK [20250209] skim
