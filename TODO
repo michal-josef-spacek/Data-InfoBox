@@ -2,7 +2,6 @@ TODO
 ====
 4. Item checks. Image.
 6. Add SEE ALSO sections.
-8. Remove 'icon_char' and 'icon_url' parameters.
 9. Add advanced fixture example.
 10.
 
@@ -21,4 +20,7 @@ OK [20240915] skim
 OK [20240915] skim
 
 7. Rewrite icon to Data::Icon object.
+OK [20250209] skim
+
+8. Remove 'icon_char' and 'icon_url' parameters.
 OK [20250209] skim
