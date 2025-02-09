@@ -1,5 +1,6 @@
 0.03
  - Change API: Add 'icon' parameter with Data::Icon object.
+ - Deprecated 'icon_char' and 'icon_url' parameters.
  - Fix doc.
  - Update copyright years.
 

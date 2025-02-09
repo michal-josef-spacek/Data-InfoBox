@@ -95,11 +95,15 @@ It's optional.
 
 =item * C<icon_url>
 
+I<Parameter will be deprecated. Use 'icon' parameter.>
+
 Icon URL.
 
 It's optional.
 
 =item * C<icon_char>
+
+I<Parameter will be deprecated. Use 'icon' parameter.>
 
 Icon character. Could be UTF-8 character. Only one character.
 
