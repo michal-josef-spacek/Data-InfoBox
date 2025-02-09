@@ -1,5 +1,6 @@
 0.03
  - Fix doc.
+ - Update copyright years.
 
 0.02 2024-09-16T21:57:04+02:00
  - API Change: Rename 'url' parameter to 'uri' and fix validity.
