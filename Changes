@@ -1,4 +1,4 @@
-0.03
+0.03 2025-02-09T17:08:43+01:00
  - Add DESCRIPTION section to doc.
  - Change API: Add 'icon' parameter with Data::Icon object.
  - Deprecate 'icon_char' and 'icon_url' parameters.
