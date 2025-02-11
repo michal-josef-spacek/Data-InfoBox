@@ -1,5 +1,6 @@
 0.04
  - API Change: Remove 'icon_char' and 'icon_url' parameters.
+ - Add another fixture with icons and items.
  - Improve DESCRIPTION sections in doc.
 
 0.03 2025-02-09T17:08:43+01:00

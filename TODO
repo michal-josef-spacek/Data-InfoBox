@@ -2,7 +2,6 @@ TODO
 ====
 4. Item checks. Image.
 6. Add SEE ALSO sections.
-9. Add advanced fixture example.
 10.
 
 Applied
@@ -24,3 +23,6 @@ OK [20250209] skim
 
 8. Remove 'icon_char' and 'icon_url' parameters.
 OK [20250209] skim
+
+9. Add advanced fixture example.
+OK [20250211] skim

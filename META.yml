@@ -28,10 +28,14 @@ no_index:
     - t
     - xt
 requires:
+  Data::Icon: 0
+  Data::InfoBox: 0
+  Data::InfoBox::Item: 0.03
   Data::Text::Simple: 0
   Mo: 0
   Mo::utils: 0.21
   Mo::utils::URI: 0.02
+  Unicode::UTF8: 0
   perl: 5.8.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Data-InfoBox/issues
