@@ -29,8 +29,6 @@ no_index:
     - xt
 requires:
   Data::Icon: 0
-  Data::InfoBox: 0
-  Data::InfoBox::Item: 0.03
   Data::Text::Simple: 0
   Mo: 0
   Mo::utils: 0.21

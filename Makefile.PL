@@ -19,8 +19,6 @@ perl_version 5.008;
 readme_from 'lib/Data/InfoBox.pm';
 recursive_author_tests('xt');
 requires 'Data::Icon' => 0;
-requires 'Data::InfoBox' => 0;
-requires 'Data::InfoBox::Item' => 0.03;
 requires 'Data::Text::Simple' => 0;
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.21;
