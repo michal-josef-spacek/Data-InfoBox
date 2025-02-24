@@ -124,6 +124,10 @@ L<Mo::utils>.
 
 Data object for info box item.
 
+=item L<Tags::HTML::InfoBox>
+
+Tags helper for HTML info box.
+
 =item L<Test::Shared::Fixture::Data::InfoBox::Street>
 
 Street info box fixture.
