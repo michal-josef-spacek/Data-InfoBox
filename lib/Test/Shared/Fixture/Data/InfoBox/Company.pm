@@ -21,7 +21,7 @@ sub new {
 				'text' => Data::Text::Simple->new(
 					'text' => 'Volvox Globator',
 				),
-				'url' => 'https://volvox.cz',
+				'uri' => 'https://volvox.cz',
 			),
 			@{Test::Shared::Fixture::Data::InfoBox::Address->new->items},
 			Data::InfoBox::Item->new(
@@ -31,7 +31,7 @@ sub new {
 				'text' => Data::Text::Simple->new(
 					'text' => 'volvox@volvox.cz',
 				),
-				'url' => 'mailto:volvox@volvox.cz',
+				'uri' => 'mailto:volvox@volvox.cz',
 			),
 			Data::InfoBox::Item->new(
 				'icon' => Data::Icon->new(
@@ -40,7 +40,7 @@ sub new {
 				'text' => Data::Text::Simple->new(
 					'text' => '+420739639506',
 				),
-				'url' => 'tel:+420739639506',
+				'uri' => 'tel:+420739639506',
 			),
 		],
 	);
