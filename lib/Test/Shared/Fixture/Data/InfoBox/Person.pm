@@ -31,6 +31,7 @@ sub new {
 				'text' => Data::Text::Simple->new(
 					'text' => '+420777623160',
 				),
+				'uri' => 'tel:+420777623160',
 			),
 		],
 	);
