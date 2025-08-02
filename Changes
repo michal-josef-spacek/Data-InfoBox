@@ -1,4 +1,4 @@
-0.07
+0.07 2025-08-02T20:28:34+02:00
  - Add missing ERRORS section in doc to InfoBox.
  - Add tests.
  - Add uri() value for Person fixture phone.
