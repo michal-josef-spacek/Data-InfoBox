@@ -7,7 +7,7 @@ use Mo qw(build is);
 use Mo::utils 0.08 qw(check_isa check_required);
 use Mo::utils::URI 0.02 qw(check_uri);
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 has icon => (
 	is => 'ro',
@@ -205,6 +205,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.07
+0.08
 
 =cut
