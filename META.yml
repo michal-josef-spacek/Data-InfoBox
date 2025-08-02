@@ -31,7 +31,8 @@ requires:
   Data::Icon: 0
   Data::Text::Simple: 0
   Mo: 0
-  Mo::utils: 0.21
+  Mo::utils: 0.08
+  Mo::utils::Array: 0
   Mo::utils::URI: 0.02
   Unicode::UTF8: 0
   perl: 5.8.0

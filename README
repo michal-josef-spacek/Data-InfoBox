@@ -69,7 +69,7 @@ EXAMPLE
      # Item 2: Second item
 
 DEPENDENCIES
-    Mo, Mo::utils.
+    Mo, Mo::utils::Array.
 
 SEE ALSO
     Data::InfoBox::Item

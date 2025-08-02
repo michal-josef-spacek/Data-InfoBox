@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Mo qw(build is);
-use Mo::utils 0.21 qw(check_array_object check_array_required);
+use Mo::utils::Array qw(check_array_object check_array_required);
 
 our $VERSION = 0.07;
 
@@ -114,7 +114,7 @@ Returns reference to array with L<Data::InfoBox::Item> objects.
 =head1 DEPENDENCIES
 
 L<Mo>,
-L<Mo::utils>.
+L<Mo::utils::Array>.
 
 =head1 SEE ALSO
 
