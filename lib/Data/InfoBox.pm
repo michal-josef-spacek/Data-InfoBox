@@ -74,6 +74,21 @@ Get list of items in info box.
 
 Returns reference to array with L<Data::InfoBox::Item> objects.
 
+=head1 ERRORS
+
+ new():
+         From Mo::utils::Array::check_array_object():
+                 Parameter 'items' must be a array.
+                         Value: %s
+                         Reference: %s
+                 Parameter 'items' with array must contain 'Data::InfoBox::Item' objects.
+                         Value: %s
+                         Reference: %s
+         From Mo::utils::Array::check_array_required():
+                 Parameter 'items' is required.
+                 Parameter 'items' with array must have at least one item.
+
+
 =head1 EXAMPLE
 
 =for comment filename=create_infobox_object_and_print.pl
