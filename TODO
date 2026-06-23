@@ -1,7 +1,9 @@
 TODO
 ====
 10. Add 'title' setting to fixtures.
-11.
+11. Add 'image' to Item.
+12. Add 'term' to Item. Result could be: "Term: Text"
+13.
 
 Applied
 =======
