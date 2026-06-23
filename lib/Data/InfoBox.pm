@@ -4,11 +4,16 @@ use strict;
 use warnings;
 
 use Mo qw(build is);
+use Mo::utils 0.08 qw(check_isa);
 use Mo::utils::Array qw(check_array_object check_array_required);
 
 our $VERSION = 0.08;
 
 has items => (
+	is => 'ro',
+);
+
+has title => (
 	is => 'ro',
 );
 
@@ -18,6 +23,9 @@ sub BUILD {
 	# Check items.
 	check_array_object($self, 'items', 'Data::InfoBox::Item');
 	check_array_required($self, 'items');
+
+	# Check 'title'.
+	check_isa($self, 'title', 'Data::Text::Simple');
 
 	return;
 }
@@ -45,6 +53,7 @@ informations. The informations are in form of text description (optionaly with i
 
  my $obj = Data::InfoBox->new(%params);
  my $items_ar = $obj->items;
+ my $title = $obj->title;
 
 =head1 METHODS
 
@@ -62,6 +71,14 @@ List of L<Data::InfoBox::Item> items. Must be as reference to array.
 
 It's required.
 
+=item * C<title>
+
+Info box title as L<Data::Text::Simple> instance.
+
+It's optional.
+
+Default value is undef.
+
 =back
 
 Returns instance of object.
@@ -73,6 +90,14 @@ Returns instance of object.
 Get list of items in info box.
 
 Returns reference to array with L<Data::InfoBox::Item> objects.
+
+=head2 C<title>
+
+ my $title = $obj->title;
+
+Get title.
+
+Returns L<Data::Text::Simple> instance or undef.
 
 =head1 ERRORS
 
@@ -87,6 +112,10 @@ Returns reference to array with L<Data::InfoBox::Item> objects.
          From Mo::utils::Array::check_array_required():
                  Parameter 'items' is required.
                  Parameter 'items' with array must have at least one item.
+         From Mo::utils::check_isa():
+                 Parameter '%s' must be a '%s' object.
+                         Value: %s
+                         Reference: %s
 
 
 =head1 EXAMPLE
@@ -113,9 +142,13 @@ Returns reference to array with L<Data::InfoBox::Item> objects.
                         ),
                 ),
          ],
+         'title' => Data::Text::Simple->new(
+                'text' => 'Info box title',
+         ),
  );
 
  # Print out.
+ print 'title: '.$obj->title->text."\n";
  my $num = 0;
  foreach my $item (@{$obj->items}) {
          $num++;
@@ -123,12 +156,14 @@ Returns reference to array with L<Data::InfoBox::Item> objects.
  }
 
  # Output:
+ # title: Info box title
  # Item 1: First item
  # Item 2: Second item
 
 =head1 DEPENDENCIES
 
 L<Mo>,
+L<Mo::utils>,
 L<Mo::utils::Array>.
 
 =head1 SEE ALSO

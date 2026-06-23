@@ -61,6 +61,7 @@ Test::Shared::Fixture::Data::InfoBox::Address - Address info box fixture.
 
  my $obj = Test::Shared::Fixture::Data::InfoBox::Address->new;
  my $items_ar = $obj->items;
+ my $title = $obj->title;
 
 =head1 METHODS
 
@@ -79,6 +80,14 @@ Returns instance of object.
 Get list of items in info box.
 
 Returns reference to array with L<Data::InfoBox::Item> objects.
+
+=head2 C<title>
+
+ my $title = $obj->title;
+
+Get title.
+
+Returns L<Data::Text::Simple> instance or undef.
 
 =head1 EXAMPLE
 

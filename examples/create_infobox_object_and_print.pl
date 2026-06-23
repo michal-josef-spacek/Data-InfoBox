@@ -20,9 +20,13 @@ my $obj = Data::InfoBox->new(
                        ),
                ),
         ],
+        'title' => Data::Text::Simple->new(
+               'text' => 'Info box title',
+        ),
 );
 
 # Print out.
+print 'title: '.$obj->title->text."\n";
 my $num = 0;
 foreach my $item (@{$obj->items}) {
         $num++;
@@ -30,5 +34,6 @@ foreach my $item (@{$obj->items}) {
 }
 
 # Output:
+# title: Info box title
 # Item 1: First item
 # Item 2: Second item

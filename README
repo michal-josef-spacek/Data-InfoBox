@@ -11,6 +11,7 @@ SYNOPSIS
 
      my $obj = Data::InfoBox->new(%params);
      my $items_ar = $obj->items;
+     my $title = $obj->title;
 
 METHODS
   "new"
@@ -25,6 +26,14 @@ METHODS
 
             It's required.
 
+    *       "title"
+
+            Info box title as Data::Text::Simple instance.
+
+            It's optional.
+
+            Default value is undef.
+
     Returns instance of object.
 
   "items"
@@ -33,6 +42,13 @@ METHODS
     Get list of items in info box.
 
     Returns reference to array with Data::InfoBox::Item objects.
+
+  "title"
+     my $title = $obj->title;
+
+    Get title.
+
+    Returns Data::Text::Simple instance or undef.
 
 ERRORS
      new():
@@ -46,6 +62,10 @@ ERRORS
              From Mo::utils::Array::check_array_required():
                      Parameter 'items' is required.
                      Parameter 'items' with array must have at least one item.
+             From Mo::utils::check_isa():
+                     Parameter '%s' must be a '%s' object.
+                             Value: %s
+                             Reference: %s
 
 EXAMPLE
      use strict;
@@ -68,9 +88,13 @@ EXAMPLE
                             ),
                     ),
              ],
+             'title' => Data::Text::Simple->new(
+                    'text' => 'Info box title',
+             ),
      );
 
      # Print out.
+     print 'title: '.$obj->title->text."\n";
      my $num = 0;
      foreach my $item (@{$obj->items}) {
              $num++;
@@ -78,11 +102,12 @@ EXAMPLE
      }
 
      # Output:
+     # title: Info box title
      # Item 1: First item
      # Item 2: Second item
 
 DEPENDENCIES
-    Mo, Mo::utils::Array.
+    Mo, Mo::utils, Mo::utils::Array.
 
 SEE ALSO
     Data::InfoBox::Item
