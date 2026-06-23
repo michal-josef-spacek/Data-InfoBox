@@ -1,5 +1,6 @@
 0.08
  - Add 'title' parameter to InfoBox.
+ - Improve SEE ALSO section in doc.
 
 0.07 2025-08-02T20:28:34+02:00
  - Add missing ERRORS section in doc to InfoBox.

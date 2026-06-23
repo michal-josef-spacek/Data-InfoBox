@@ -178,6 +178,22 @@ Data object for info box item.
 
 Tags helper for HTML info box.
 
+=item L<Test::Shared::Fixture::Data::InfoBox::Address>
+
+Address info box fixture.
+
+=item L<Test::Shared::Fixture::Data::InfoBox::Company>
+
+Company info box fixture.
+
+=item L<Test::Shared::Fixture::Data::InfoBox::Items>
+
+Items info box fixture.
+
+=item L<Test::Shared::Fixture::Data::InfoBox::Person>
+
+Person info box fixture.
+
 =item L<Test::Shared::Fixture::Data::InfoBox::Street>
 
 Street info box fixture.

@@ -116,6 +116,18 @@ SEE ALSO
     Tags::HTML::InfoBox
         Tags helper for HTML info box.
 
+    Test::Shared::Fixture::Data::InfoBox::Address
+        Address info box fixture.
+
+    Test::Shared::Fixture::Data::InfoBox::Company
+        Company info box fixture.
+
+    Test::Shared::Fixture::Data::InfoBox::Items
+        Items info box fixture.
+
+    Test::Shared::Fixture::Data::InfoBox::Person
+        Person info box fixture.
+
     Test::Shared::Fixture::Data::InfoBox::Street
         Street info box fixture.
 
